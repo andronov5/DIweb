@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lera's Demo Website</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-wrap">
+      <a href="#home" class="brand">Lera Demo</a>
+
+      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="home" class="hero fade">
+    <div class="hero-bg"></div>
+
+    <div class="hero-inner">
+      <p class="eyebrow">Personal Portfolio Demo</p>
+
+      <h1>
+        Welcome to <span>Lera's</span><br>
+        Demo Website
+      </h1>
+
+      <p class="subtitle">
+        A clean little website for projects, creativity, coding, learning, and all the ideas I am building next.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <button id="demoBtn" class="btn btn-secondary">Open Demo</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- QUICK INTRO -->
+  <section class="section intro fade">
+    <div class="shell intro-grid">
+      <div>
+        <p class="section-label">The idea</p>
+        <h2>A simple website that actually looks good on mobile.</h2>
+      </div>
+
+      <p>
+        This demo site is designed to feel polished, modern, and easy to read on any screen. It can be used as a personal portfolio, a class project, a coding club example, or just a clean starting point for a bigger website.
+      </p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about fade">
+    <div class="shell about-grid">
+      <div class="profile-card">
+        <div class="profile-circle">L</div>
+        <h3>Lera</h3>
+        <p>Coder · Creator · Student</p>
+      </div>
+
+      <div class="about-text">
+        <p class="section-label">About me</p>
+        <h2>Hi, I’m Lera.</h2>
+
+        <p>
+          I like building things that make complicated ideas easier to understand. Sometimes that means coding a website, sometimes it means explaining machine learning, and sometimes it means turning a random idea into a project that actually works.
+        </p>
+
+        <p>
+          This website is a demo, but it still shows my style: clean design, simple explanations, creative energy, and a focus on making technology feel less intimidating.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats fade">
+    <div class="shell stats-wrap">
+      <div class="stat">
+        <span class="stat-num" data-count="1">0</span>
+        <p>Demo Website</p>
+      </div>
+
+      <div class="stat">
+        <span class="stat-num" data-count="4">0</span>
+        <p>Main Sections</p>
+      </div>
+
+      <div class="stat">
+        <span class="stat-num" data-count="100">0</span><span class="unit">%</span>
+        <p>Mobile Friendly</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects fade">
+    <div class="shell">
+      <p class="section-label">Featured work</p>
+      <h2>Things this site could show.</h2>
+
+      <div class="card-grid">
+        <article class="card">
+          <div class="card-icon">💻</div>
+          <h3>Web Projects</h3>
+          <p>
+            Small websites, interactive pages, landing pages, and experiments with layout, animation, and responsive design.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🧠</div>
+          <h3>Machine Learning</h3>
+          <p>
+            Beginner-friendly projects that explain how models work without making everything feel overly technical.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-icon">🎬</div>
+          <h3>Creative Content</h3>
+          <p>
+            Videos, scripts, visuals, and educational content that make coding and data science more interesting.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills fade">
+    <div class="shell skills-grid">
+      <div>
+        <p class="section-label">What I’m learning</p>
+        <h2>Creative tech skills.</h2>
+
+        <p>
+          This section can be edited depending on what the website is for. Right now, it shows a simple mix of coding, design, and communication skills.
+        </p>
+      </div>
+
+      <div class="skill-list">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>Machine Learning</span>
+        <span>Video Editing</span>
+        <span>Public Speaking</span>
+        <span>Creative Design</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact fade">
+    <div class="shell contact-box">
+      <p class="section-label">Contact</p>
+      <h2>Want to build something?</h2>
+
+      <p>
+        This is where a real website could include an email, social link, portfolio link, or contact form. For now, it is just a clean ending section for the demo.
+      </p>
+
+      <a href="#home" class="btn btn-primary">Back to Top</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Lera’s Demo Website · Built with HTML, CSS, and JavaScript.</p>
+  </footer>
+
+  <!-- POPUP -->
+  <div id="demoPopup" class="popup" aria-hidden="true">
+    <div class="popup-box">
+      <button id="closePopup" class="popup-close" aria-label="Close popup">&times;</button>
+
+      <p class="popup-label">Tiny demo</p>
+      <h2>This button works.</h2>
+      <p>
+        This is a simple pop-up window. You can use it later for a real demo, a project preview, or a contact message.
+      </p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>

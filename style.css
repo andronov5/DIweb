@@ -693,3 +693,44 @@ p {
     transform: none;
   }
 }
+
+
+/* =========================
+   PROFILE IMAGE CARD OVERRIDE
+========================= */
+
+.profile-card.image-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 0;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  text-align: initial;
+}
+
+.profile-card.image-card img {
+  width: 100%;
+  height: 370px;
+  object-fit: cover;
+  object-position: 36% center;
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 820px) {
+  .profile-card.image-card {
+    padding: 0;
+  }
+
+  .profile-card.image-card img {
+    height: 300px;
+  }
+}
+
+/* Small phones */
+@media (max-width: 430px) {
+  .profile-card.image-card img {
+    height: 240px;
+  }
+}
